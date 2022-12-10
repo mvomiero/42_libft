@@ -6,7 +6,7 @@
 #    By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 17:49:48 by mvomiero          #+#    #+#              #
-#    Updated: 2022/12/09 18:42:52 by mvomiero         ###   ########.fr        #
+#    Updated: 2022/12/10 17:17:33 by mvomiero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,11 +29,11 @@ FLAGS = -Wall -Werror -Wextra
 all:	$(NAME)
 
 $(NAME): $(OBJS)
-	gcc $(FLAGS) -c $(SRCS)
+# gcc $(FLAGS) -c $(SRCS)
 	ar rcs $(NAME) $(OBJS)
 
 bonus: $(OBJS) $(BONUS_OBJS)
-	gcc $(FLAGS) -c $(BONUS)
+# gcc $(FLAGS) -c $(BONUS)
 	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 	
 clean:

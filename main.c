@@ -6,19 +6,12 @@
 /*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:13:36 by mvomiero          #+#    #+#             */
-/*   Updated: 2022/12/10 16:52:50 by mvomiero         ###   ########.fr       */
+/*   Updated: 2022/12/10 17:15:30 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-#include <stdio.h>
-#include <ctype.h>
-#include <stdlib.h>
-#include <string.h>
-#include <fcntl.h>
-#include <errno.h>
 
 void *upper_lst(void *content)
 {
@@ -49,6 +42,9 @@ void print_list(t_list *lst)
 int main(void)
 {
 	t_list *first = ft_lstnew(ft_strdup("ciaociaociao"));
+	ft_lstadd_back(&first, ft_lstnew("One"));
+ft_lstadd_back(&first, ft_lstnew("Two"));
+ft_lstadd_back(&first, ft_lstnew(""));
 
 	t_list	*list_copy = ft_lstmap(first, &upper_lst, &free);
 
