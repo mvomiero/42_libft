@@ -6,7 +6,7 @@
 /*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 15:38:15 by mvomiero          #+#    #+#             */
-/*   Updated: 2022/12/01 15:59:47 by mvomiero         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:42:49 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-/* 
+/*
 A bit like strcmp
  */
 

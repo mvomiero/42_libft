@@ -6,27 +6,11 @@
 /*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 17:24:59 by mvomiero          #+#    #+#             */
-/*   Updated: 2022/12/09 17:25:16 by mvomiero         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:08:47 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/* void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	*last_temp;
-
-	if (lst)
-	{
-		if (*lst)
-		{
-			last_temp = ft_lstlast(*lst);
-			last_temp->next = new;
-		}
-	}
-	else
-			*lst = new;
-} */
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {

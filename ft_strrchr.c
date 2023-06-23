@@ -6,7 +6,7 @@
 /*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 12:48:19 by mvomiero          #+#    #+#             */
-/*   Updated: 2022/12/06 11:06:10 by mvomiero         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:16:37 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,8 @@ char	*ft_strrchr(const char *s, int c)
 }
 
 /* 
-with size_t instead of int as iterator i it wasn't working for returning a null
-pointer. Still not sure about why. 
-If not, you just iterate backwords and return the pointer to the first character
+
+You just iterate backwords and return the pointer to the first character
  you found.
  */
 

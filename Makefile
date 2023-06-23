@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: mvomiero <mvomiero@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 17:49:48 by mvomiero          #+#    #+#              #
-#    Updated: 2022/12/10 17:17:33 by mvomiero         ###   ########.fr        #
+#    Updated: 2023/06/23 11:27:07 by mvomiero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,28 +16,24 @@ SRCS =	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
 		ft_strnstr.c ft_tolower.c ft_bzero.c   ft_isascii.c \
 		ft_memmove.c ft_putnbr_fd.c  ft_strdup.c  ft_strlen.c  ft_strrchr.c \
 		ft_toupper.c ft_calloc.c  ft_isdigit.c ft_memchr.c  ft_memset.c  \
-		ft_putstr_fd.c  ft_strjoin.c ft_strmapi.c ft_strtrim.c ft_striteri.c
-BONUS = ft_lstadd_front_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
+		ft_putstr_fd.c  ft_strjoin.c ft_strmapi.c ft_strtrim.c ft_striteri.c \
+		ft_lstadd_front_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
 		ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c \
-		ft_lstmap_bonus.c
+		ft_lstmap_bonus.c \
+		get_next_line.c get_next_line_utils.c
 
 OBJS = $(SRCS:.c=.o)
-BONUS_OBJS = $(BONUS:.c=.o)
 NAME = libft.a
 FLAGS = -Wall -Werror -Wextra
 
 all:	$(NAME)
 
-$(NAME): $(OBJS)
-# gcc $(FLAGS) -c $(SRCS)
-	ar rcs $(NAME) $(OBJS)
-
-bonus: $(OBJS) $(BONUS_OBJS)
-# gcc $(FLAGS) -c $(BONUS)
-	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+$(NAME): $(SRCS)
+	@cc $(FLAGS) -c $(SRCS)
+	@ar rcs $(NAME) $(OBJS)
 	
 clean:
-	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJS)
 
 fclean:	clean
 	rm -f $(NAME)
