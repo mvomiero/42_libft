@@ -6,7 +6,7 @@
 /*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:08:16 by mvomiero          #+#    #+#             */
-/*   Updated: 2023/06/26 15:39:53 by mvomiero         ###   ########.fr       */
+/*   Updated: 2023/06/26 18:27:11 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,11 @@ char	*gnl_ft_strjoin(char *s1, char const *s2);
 size_t	gnl_ft_strlen(const char *s);
 char	*gnl_ft_strchr(const char *s, int c);
 void	ft_print_strarr(char **arr);
+int		ft_arrlen(char **argv);
+double	ft_atof(char *str);
+int		ft_is_zero(char *str);
+
+
 
 #endif
 
