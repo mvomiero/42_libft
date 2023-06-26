@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mvomiero <mvomiero@student.42.fr>          +#+  +:+       +#+         #
+#    By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 17:49:48 by mvomiero          #+#    #+#              #
-#    Updated: 2023/06/23 11:27:07 by mvomiero         ###   ########.fr        #
+#    Updated: 2023/06/26 15:40:30 by mvomiero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRCS =	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
 		ft_lstadd_front_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
 		ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c \
 		ft_lstmap_bonus.c \
-		get_next_line.c get_next_line_utils.c
+		get_next_line.c get_next_line_utils.c ft_print_strarr.c
 
 OBJS = $(SRCS:.c=.o)
 NAME = libft.a
