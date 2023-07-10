@@ -6,7 +6,7 @@
 /*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/26 15:39:21 by mvomiero          #+#    #+#             */
-/*   Updated: 2023/06/26 15:44:13 by mvomiero         ###   ########.fr       */
+/*   Updated: 2023/07/10 17:03:07 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_print_strarr(char **arr)
 {
-	int i;
+	int	i;
+
 	if (!arr)
 		return ;
 	i = 0;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lde-ross <lde-ross@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:08:16 by mvomiero          #+#    #+#             */
-/*   Updated: 2023/06/27 18:43:08 by lde-ross         ###   ########.fr       */
+/*   Updated: 2023/07/10 17:04:00 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,8 +86,6 @@ void	ft_print_strarr(char **arr);
 int		ft_arrlen(char **argv);
 double	ft_atof(char *str);
 int		ft_is_zero(char *str);
-
-
 
 #endif
 

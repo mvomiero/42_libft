@@ -6,14 +6,16 @@
 /*   By: mvomiero <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/26 17:57:21 by mvomiero          #+#    #+#             */
-/*   Updated: 2023/06/26 17:57:46 by mvomiero         ###   ########.fr       */
+/*   Updated: 2023/07/10 17:03:41 by mvomiero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_arrlen(char **argv)
+
+int	ft_arrlen(char **argv)
 {
 	int	i;
+
 	i = 0;
 	while (argv && argv[i])
 		i++;
